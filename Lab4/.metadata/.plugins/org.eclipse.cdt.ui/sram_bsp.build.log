@@ -1,0 +1,6 @@
+00:22:03 **** Clean-only build of configuration Nios II for project sram_bsp ****
+make clean 
+[BSP clean complete]
+
+00:22:04 Build Finished (took 933ms)
+

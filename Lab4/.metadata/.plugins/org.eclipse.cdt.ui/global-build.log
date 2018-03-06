@@ -1,0 +1,587 @@
+07:04:27 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:05:04 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:05:08 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:09:38 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling gameplayMechanics.c to obj/default/gameplayMechanics.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/gameplayMechanics.o gameplayMechanics.c
+gameplayMechanics.c: In function 'getCommand':
+gameplayMechanics.c:48:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   if (command == 0 && (me.whichPokemon == 0 && me.pokemon2HP <= 0
+                                             ^
+gameplayMechanics.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Compiling simplifiedPokemon.c to obj/default/simplifiedPokemon.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/simplifiedPokemon.o simplifiedPokemon.c
+simplifiedPokemon.c: In function 'main':
+simplifiedPokemon.c:37:10: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+    srand(time(NULL));
+          ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:09:47 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:12:54 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:23:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:61:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Compiling simplifiedPokemon.c to obj/default/simplifiedPokemon.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/simplifiedPokemon.o simplifiedPokemon.c
+simplifiedPokemon.c: In function 'main':
+simplifiedPokemon.c:37:10: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+    srand(time(NULL));
+          ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:13:02 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:14:54 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:23:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:62:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:15:00 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:16:26 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:25:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:64:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:85:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:16:33 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:18:17 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:24:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:61:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:82:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:18:23 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:19:42 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling simplifiedPokemon.c to obj/default/simplifiedPokemon.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/simplifiedPokemon.o simplifiedPokemon.c
+simplifiedPokemon.c: In function 'main':
+simplifiedPokemon.c:37:10: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+    srand(time(NULL));
+          ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:19:50 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:23:06 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:25:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:62:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:23:13 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:31:48 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling simplifiedPokemon.c to obj/default/simplifiedPokemon.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/simplifiedPokemon.o simplifiedPokemon.c
+simplifiedPokemon.c: In function 'main':
+simplifiedPokemon.c:37:10: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+    srand(time(NULL));
+          ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:31:54 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:36:26 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:25:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:62:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:36:34 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:41:45 **** Build of configuration Nios II for project transmitOrReceive ****
+make all 
+Info: Building ../transmitOrReceive_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmitOrReceive_bsp/
+[BSP build complete]
+Info: Compiling transmitOrReceive.c to obj/default/transmitOrReceive.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmitOrReceive_bsp//HAL/inc -I../transmitOrReceive_bsp/ -I../transmitOrReceive_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/transmitOrReceive.o transmitOrReceive.c
+transmitOrReceive.c: In function 'main':
+transmitOrReceive.c:16:3: error: unknown type name 'attack'
+   attack* allAttacks = defineAttacks();
+   ^
+transmitOrReceive.c:16:24: warning: implicit declaration of function 'defineAttacks' [-Wimplicit-function-declaration]
+   attack* allAttacks = defineAttacks();
+                        ^
+transmitOrReceive.c:16:24: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+transmitOrReceive.c:17:3: error: unknown type name 'pokemon'
+   pokemon* allPokemon = definePokemon(allAttacks);
+   ^
+transmitOrReceive.c:17:25: warning: implicit declaration of function 'definePokemon' [-Wimplicit-function-declaration]
+   pokemon* allPokemon = definePokemon(allAttacks);
+                         ^
+transmitOrReceive.c:17:25: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+transmitOrReceive.c:18:4: error: 'LOAD' undeclared (first use in this function)
+   *LOAD = 0;
+    ^
+transmitOrReceive.c:18:4: note: each undeclared identifier is reported only once for each function it appears in
+transmitOrReceive.c:19:4: error: 'TRANSMIT' undeclared (first use in this function)
+   *TRANSMIT = 0;
+    ^
+transmitOrReceive.c:23:5: error: unknown type name 'player'
+     player me;
+     ^
+transmitOrReceive.c:24:4: error: unknown type name 'player'
+    player* whoAmI = &me;
+    ^
+transmitOrReceive.c:25:4: warning: implicit declaration of function 'srand' [-Wimplicit-function-declaration]
+    srand(time(NULL));
+    ^
+transmitOrReceive.c:25:10: warning: implicit declaration of function 'time' [-Wimplicit-function-declaration]
+    srand(time(NULL));
+          ^
+transmitOrReceive.c:26:16: warning: implicit declaration of function 'rand' [-Wimplicit-function-declaration]
+     int ran1 = rand() % 8;
+                ^
+transmitOrReceive.c:29:4: warning: implicit declaration of function 'definePlayerMe' [-Wimplicit-function-declaration]
+    definePlayerMe(whoAmI, allPokemon, ran1, ran2);
+    ^
+transmitOrReceive.c:30:5: warning: implicit declaration of function 'printPlayer' [-Wimplicit-function-declaration]
+     printPlayer(whoAmI);
+     ^
+transmitOrReceive.c:33:5: warning: implicit declaration of function 'sendInfoToOpponent' [-Wimplicit-function-declaration]
+     sendInfoToOpponent(whoAmI);
+     ^
+transmitOrReceive.c:34:5: error: unknown type name 'player'
+     player oppo;
+     ^
+transmitOrReceive.c:35:5: error: unknown type name 'player'
+     player* opponent = & oppo;
+     ^
+transmitOrReceive.c:36:5: warning: implicit declaration of function 'receiveInfoFromOpponent' [-Wimplicit-function-declaration]
+     receiveInfoFromOpponent(opponent, allPokemon);
+     ^
+transmitOrReceive.c:39:4: error: unknown type name 'bool'
+    bool myTurn = rockPaperScissor();
+    ^
+transmitOrReceive.c:39:18: warning: implicit declaration of function 'rockPaperScissor' [-Wimplicit-function-declaration]
+    bool myTurn = rockPaperScissor();
+                  ^
+transmitOrReceive.c:42:5: error: unknown type name 'bool'
+     bool gameOverForOpponent = false;
+     ^
+transmitOrReceive.c:42:32: error: 'false' undeclared (first use in this function)
+     bool gameOverForOpponent = false;
+                                ^
+transmitOrReceive.c:43:5: error: unknown type name 'bool'
+     bool gameOverForMe = false;
+     ^
+transmitOrReceive.c:53:26: warning: implicit declaration of function 'getCommand' [-Wimplicit-function-declaration]
+         int usrCommand = getCommand(opponent, whoAmI);
+                          ^
+transmitOrReceive.c:54:9: warning: implicit declaration of function 'processCommand' [-Wimplicit-function-declaration]
+         processCommand(opponent, whoAmI, usrCommand);
+         ^
+transmitOrReceive.c:55:9: warning: implicit declaration of function 'send' [-Wimplicit-function-declaration]
+         send(usrCommand);
+         ^
+transmitOrReceive.c:58:35: warning: implicit declaration of function 'receive' [-Wimplicit-function-declaration]
+         int opponentInformation = receive();
+                                   ^
+transmitOrReceive.c:60:18: error: 'true' undeclared (first use in this function)
+         myTurn = true;
+                  ^
+transmitOrReceive.c:63:29: warning: implicit declaration of function 'checkGameOver' [-Wimplicit-function-declaration]
+       gameOverForOpponent = checkGameOver(opponent);
+                             ^
+transmitOrReceive.c:66:9: warning: implicit declaration of function 'handleGameOver' [-Wimplicit-function-declaration]
+         handleGameOver(gameOverForOpponent, gameOverForMe);
+         ^
+make: *** [obj/default/transmitOrReceive.o] Error 1
+07:41:51 **** Incremental Build of configuration Nios II for project transmitOrReceive ****
+make all 
+Info: Building ../transmitOrReceive_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmitOrReceive_bsp/
+[BSP build complete]
+Info: Compiling transmitOrReceive.c to obj/default/transmitOrReceive.o
+nios2-elf-gcc -xc -MP -MMD -c -I../transmitOrReceive_bsp//HAL/inc -I../transmitOrReceive_bsp/ -I../transmitOrReceive_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/transmitOrReceive.o transmitOrReceive.c
+Info: Linking transmitOrReceive.elf
+nios2-elf-g++  -T'../transmitOrReceive_bsp//linker.x' -msys-crt0='../transmitOrReceive_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../transmitOrReceive_bsp/  -msmallc  -Wl,-Map=transmitOrReceive.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o transmitOrReceive.elf obj/default/transmitOrReceive.o -lm -msys-lib=m
+../transmitOrReceive_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\transmitOrReceive_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert transmitOrReceive.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/transmitOrReceive_bsp/../../processor.sopcinfo
+Info: (transmitOrReceive.elf) 8404 Bytes program size (code + initialized data).
+Info:                         71 KBytes free for stack + heap.
+Info: Creating transmitOrReceive.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source transmitOrReceive.elf >transmitOrReceive.objdump
+[transmitOrReceive build complete]
+07:42:14 **** Build of configuration Nios II for project transmitOrReceive ****
+make all 
+Info: Building ../transmitOrReceive_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmitOrReceive_bsp/
+[BSP build complete]
+[transmitOrReceive build complete]
+07:42:17 **** Incremental Build of configuration Nios II for project transmitOrReceive ****
+make all 
+Info: Building ../transmitOrReceive_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../transmitOrReceive_bsp/
+[BSP build complete]
+[transmitOrReceive build complete]
+07:42:45 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:25:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:62:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:42:50 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:52:48 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:25:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:62:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:83:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Compiling gameplayMechanics.c to obj/default/gameplayMechanics.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/gameplayMechanics.o gameplayMechanics.c
+gameplayMechanics.c: In function 'getCommand':
+gameplayMechanics.c:48:45: warning: suggest parentheses around '&&' within '||' [-Wparentheses]
+   if (command == 0 && (me.whichPokemon == 0 && me.pokemon2HP <= 0
+                                             ^
+gameplayMechanics.c:56:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               48 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+07:52:56 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:52:58 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:53:37 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:53:39 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:58:57 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+07:59:00 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]
+08:11:53 **** Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+Info: Compiling communications.c to obj/default/communications.o
+nios2-elf-gcc -xc -MP -MMD -c -I../pokemon_bsp//HAL/inc -I../pokemon_bsp/ -I../pokemon_bsp//drivers/inc  -pipe -D__hal__ -DALT_NO_C_PLUS_PLUS -DALT_USE_DIRECT_DRIVERS -DALT_NO_INSTRUCTION_EMULATION -DALT_USE_SMALL_DRIVERS -DSMALL_C_LIB -DALT_SINGLE_THREADED    -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o obj/default/communications.o communications.c
+communications.c: In function 'receive':
+communications.c:26:9: warning: variable 'received' set but not used [-Wunused-but-set-variable]
+    bool received;
+         ^
+communications.c: In function 'rockPaperScissor':
+communications.c:63:18: warning: implicit declaration of function 'alt_getchar' [-Wimplicit-function-declaration]
+       myAnswer = alt_getchar();
+                  ^
+communications.c:84:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+Info: Linking pokemon.elf
+nios2-elf-g++  -T'../pokemon_bsp//linker.x' -msys-crt0='../pokemon_bsp//obj/HAL/src/crt0.o' -msys-lib=hal_bsp -L../pokemon_bsp/  -msmallc  -Wl,-Map=pokemon.map   -O0 -g -Wall   -mno-hw-div -mno-hw-mul -mno-hw-mulx -mgpopt=global  -o pokemon.elf obj/default/communications.o obj/default/defineAttacks.o obj/default/definePlayer.o obj/default/definePokemon.o obj/default/gameplayMechanics.o obj/default/simplifiedPokemon.o -lm -msys-lib=m
+../pokemon_bsp/\libhal_bsp.a(alt_main.o): In function `alt_main':
+C:\Users\alexrkas\Desktop\EE371\Lab4\software\pokemon_bsp/HAL/src/alt_main.c:155: warning: warning: close is not implemented and will always fail
+nios2-elf-insert pokemon.elf --thread_model hal --cpu_name cpu --qsys true --simulation_enabled false --id 0 --sidp 0x410c0 --timestamp 1520330000 --stderr_dev jtag_uart --stdin_dev jtag_uart --stdout_dev jtag_uart --sopc_system_name processor --quartus_project_dir "C:/Users/alexrkas/Desktop/EE371/Lab4" --jdi ../..//output_files/networkHardware.jdi --sopcinfo C:/Users/alexrkas/Desktop/EE371/Lab4/software/pokemon_bsp/../../processor.sopcinfo
+Info: (pokemon.elf) 31 KBytes program size (code + initialized data).
+Info:               47 KBytes free for stack + heap.
+Info: Creating pokemon.objdump
+nios2-elf-objdump --disassemble --syms --all-header --source pokemon.elf >pokemon.objdump
+[pokemon build complete]
+08:11:57 **** Incremental Build of configuration Nios II for project pokemon ****
+make all 
+Info: Building ../pokemon_bsp/
+C:/intelFPGA/17.1/nios2eds/bin/gnu/H-x86_64-mingw32/bin/make --no-print-directory -C ../pokemon_bsp/
+[BSP build complete]
+[pokemon build complete]

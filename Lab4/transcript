@@ -1,0 +1,315 @@
+# Reading C:/intelFPGA/17.1/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./keyHolder.v 
+# -- Compiling module keyHolder
+# -- Compiling module keyHolder_testbench
+# 
+# Top level modules:
+# 	keyHolder_testbench
+# End time: 22:14:14 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./s2p.v 
+# -- Compiling module s2p
+# 
+# Top level modules:
+# 	s2p
+# End time: 22:14:14 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./p2s.v 
+# -- Compiling module p2s
+# 
+# Top level modules:
+# 	p2s
+# End time: 22:14:14 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./networkHardware.v 
+# -- Compiling module networkHardware
+# -- Compiling module networkHardware_testbench
+# 
+# Top level modules:
+# 	networkHardware_testbench
+# End time: 22:14:14 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./bitSampleCount.v 
+# -- Compiling module bitSampleCount
+# 
+# Top level modules:
+# 	bitSampleCount
+# End time: 22:14:14 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./bitIdentifierCount.v 
+# -- Compiling module bitIdentifierCount
+# 
+# Top level modules:
+# 	bitIdentifierCount
+# End time: 22:14:14 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:14 on Mar 04,2018
+# vlog -reportprogress 300 ./startBitDetect.v 
+# -- Compiling module startBitDetect
+# 
+# Top level modules:
+# 	startBitDetect
+# End time: 22:14:15 on Mar 04,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Mar 04,2018
+# vlog -reportprogress 300 ./topLevel.v 
+# -- Compiling module topLevel
+# -- Compiling module topLevel_testbench
+# 
+# Top level modules:
+# 	topLevel_testbench
+# End time: 22:14:15 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:14:15 on Mar 04,2018
+# vlog -reportprogress 300 ./loadHolder.v 
+# -- Compiling module loadHolder
+# 
+# Top level modules:
+# 	loadHolder
+# End time: 22:14:15 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work topLevel_testbench 
+# Start time: 22:14:15 on Mar 04,2018
+# Loading work.topLevel_testbench
+# Loading work.topLevel
+# Loading work.keyHolder
+# Loading work.networkHardware
+# Loading work.loadHolder
+# Loading work.bitIdentifierCount
+# Loading work.bitSampleCount
+# Loading work.p2s
+# Loading work.s2p
+# Loading work.startBitDetect
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./topLevel.v(73)
+#    Time: 4001410 ps  Iteration: 0  Instance: /topLevel_testbench
+# Break in Module topLevel_testbench at ./topLevel.v line 73
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:08 on Mar 04,2018
+# vlog -reportprogress 300 ./keyHolder.v 
+# -- Compiling module keyHolder
+# -- Compiling module keyHolder_testbench
+# 
+# Top level modules:
+# 	keyHolder_testbench
+# End time: 22:21:08 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:08 on Mar 04,2018
+# vlog -reportprogress 300 ./s2p.v 
+# -- Compiling module s2p
+# 
+# Top level modules:
+# 	s2p
+# End time: 22:21:08 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:08 on Mar 04,2018
+# vlog -reportprogress 300 ./p2s.v 
+# -- Compiling module p2s
+# 
+# Top level modules:
+# 	p2s
+# End time: 22:21:08 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:08 on Mar 04,2018
+# vlog -reportprogress 300 ./networkHardware.v 
+# -- Compiling module networkHardware
+# -- Compiling module networkHardware_testbench
+# 
+# Top level modules:
+# 	networkHardware_testbench
+# End time: 22:21:08 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:08 on Mar 04,2018
+# vlog -reportprogress 300 ./bitSampleCount.v 
+# -- Compiling module bitSampleCount
+# 
+# Top level modules:
+# 	bitSampleCount
+# End time: 22:21:08 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:09 on Mar 04,2018
+# vlog -reportprogress 300 ./bitIdentifierCount.v 
+# -- Compiling module bitIdentifierCount
+# 
+# Top level modules:
+# 	bitIdentifierCount
+# End time: 22:21:09 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:09 on Mar 04,2018
+# vlog -reportprogress 300 ./startBitDetect.v 
+# -- Compiling module startBitDetect
+# 
+# Top level modules:
+# 	startBitDetect
+# End time: 22:21:09 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:09 on Mar 04,2018
+# vlog -reportprogress 300 ./topLevel.v 
+# -- Compiling module topLevel
+# -- Compiling module topLevel_testbench
+# 
+# Top level modules:
+# 	topLevel_testbench
+# End time: 22:21:09 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:21:09 on Mar 04,2018
+# vlog -reportprogress 300 ./loadHolder.v 
+# -- Compiling module loadHolder
+# 
+# Top level modules:
+# 	loadHolder
+# End time: 22:21:09 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work topLevel_testbench 
+# Start time: 22:21:11 on Mar 04,2018
+# Loading work.topLevel_testbench
+# Loading work.topLevel
+# Loading work.keyHolder
+# Loading work.networkHardware
+# Loading work.loadHolder
+# Loading work.bitIdentifierCount
+# Loading work.bitSampleCount
+# Loading work.p2s
+# Loading work.s2p
+# Loading work.startBitDetect
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./topLevel.v(73)
+#    Time: 4001410 ps  Iteration: 0  Instance: /topLevel_testbench
+# Break in Module topLevel_testbench at ./topLevel.v line 73
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:33 on Mar 04,2018
+# vlog -reportprogress 300 ./keyHolder.v 
+# -- Compiling module keyHolder
+# -- Compiling module keyHolder_testbench
+# 
+# Top level modules:
+# 	keyHolder_testbench
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./s2p.v 
+# -- Compiling module s2p
+# 
+# Top level modules:
+# 	s2p
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./p2s.v 
+# -- Compiling module p2s
+# 
+# Top level modules:
+# 	p2s
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./networkHardware.v 
+# -- Compiling module networkHardware
+# -- Compiling module networkHardware_testbench
+# 
+# Top level modules:
+# 	networkHardware_testbench
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./bitSampleCount.v 
+# -- Compiling module bitSampleCount
+# 
+# Top level modules:
+# 	bitSampleCount
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./bitIdentifierCount.v 
+# -- Compiling module bitIdentifierCount
+# 
+# Top level modules:
+# 	bitIdentifierCount
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./startBitDetect.v 
+# -- Compiling module startBitDetect
+# 
+# Top level modules:
+# 	startBitDetect
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./topLevel.v 
+# -- Compiling module topLevel
+# -- Compiling module topLevel_testbench
+# 
+# Top level modules:
+# 	topLevel_testbench
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:34 on Mar 04,2018
+# vlog -reportprogress 300 ./loadHolder.v 
+# -- Compiling module loadHolder
+# 
+# Top level modules:
+# 	loadHolder
+# End time: 22:29:34 on Mar 04,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work topLevel_testbench 
+# Start time: 22:29:36 on Mar 04,2018
+# Loading work.topLevel_testbench
+# Loading work.topLevel
+# Loading work.keyHolder
+# Loading work.networkHardware
+# Loading work.loadHolder
+# Loading work.bitIdentifierCount
+# Loading work.bitSampleCount
+# Loading work.p2s
+# Loading work.s2p
+# Loading work.startBitDetect
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# ** Note: $stop    : ./topLevel.v(73)
+#    Time: 4001410 ps  Iteration: 0  Instance: /topLevel_testbench
+# Break in Module topLevel_testbench at ./topLevel.v line 73
+# End time: 22:44:56 on Mar 04,2018, Elapsed time: 0:15:20
+# Errors: 0, Warnings: 0

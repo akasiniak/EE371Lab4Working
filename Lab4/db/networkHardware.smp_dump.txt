@@ -1,0 +1,15 @@
+
+State Machine - |topLevel|EE_371_Project_2:bathysphere|pressurizer:p|pressurizeState
+Name pressurizeState.00 pressurizeState.10 pressurizeState.01 
+pressurizeState.00 0 0 0 
+pressurizeState.01 1 0 1 
+pressurizeState.10 1 1 0 
+
+State Machine - |topLevel|processor:projectProcessor|processor_cpu:cpu|processor_cpu_nios2_oci:the_processor_cpu_nios2_oci|processor_cpu_jtag_debug_module_wrapper:the_processor_cpu_jtag_debug_module_wrapper|processor_cpu_jtag_debug_module_tck:the_processor_cpu_jtag_debug_module_tck|DRsize
+Name DRsize.101 DRsize.100 DRsize.011 DRsize.010 DRsize.001 DRsize.000 
+DRsize.000 0 0 0 0 0 0 
+DRsize.001 0 0 0 0 1 1 
+DRsize.010 0 0 0 1 0 1 
+DRsize.011 0 0 1 0 0 1 
+DRsize.100 0 1 0 0 0 1 
+DRsize.101 1 0 0 0 0 1 
